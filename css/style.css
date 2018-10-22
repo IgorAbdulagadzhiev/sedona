@@ -380,3 +380,123 @@ a {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden; }
+
+.header {
+  min-height: 56px;
+  min-width: 768px; }
+
+.header__logo-wrap {
+  position: static;
+  height: 0; }
+
+.header__logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 10; }
+
+.main-nav__list {
+  display: flex;
+  padding: 0 6%;
+  margin: 0;
+  list-style: none;
+  min-width: 768px; }
+
+.main-nav__item {
+  width: 20%;
+  text-align: left;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+  .main-nav__item:nth-child(2) {
+    margin-right: 20%; }
+  .main-nav__item:nth-child(-n+2) {
+    text-align: left; }
+  .main-nav__item:nth-last-child(-n+2) {
+    text-align: right; }
+
+.main-nav__link {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000; }
+
+.features {
+  height: 1100px; }
+
+.features__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.features__item {
+  margin: 0;
+  padding: 0;
+  height: 256px;
+  width: 33%; }
+  .features__item--image {
+    width: 66%;
+    background-image: url(../../img/features-image-1.jpg); }
+  .features__item--blue {
+    background-color: #81b3d2;
+    color: #ffffff; }
+
+.features__item-title {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold; }
+
+.features__item-sub {
+  font-size: 14px;
+  line-height: 21px; }
+
+.features__item-text {
+  font-size: 14px;
+  line-height: 21px; }
+
+.page-wrapper {
+  min-width: 768px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: 0 0 30px -4px rgba(0, 0, 0, 0.6); }
+
+.promo {
+  height: 724px; }
+
+.promo__bg {
+  height: 508px;
+  background: url(../../img/triangle.png) no-repeat 52% bottom, url(../../img/text.png) no-repeat center 45%, url(../../img/background-photo.jpg) no-repeat top;
+  background-size: contain,auto,auto; }
+
+.promo__title-container {
+  height: 212px; }
+
+.promo__title {
+  margin: 0;
+  padding-top: 55px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000; }
+
+.promo__desc {
+  margin: 0;
+  padding-top: 35px;
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333; }
+
+body {
+  background-color: #f2f2f2;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000; }

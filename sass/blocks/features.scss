@@ -1,0 +1,41 @@
+.features {
+  height: 1100px;
+}
+.features__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+.features__item {
+  margin: 0;
+  padding: 0;
+  height: 256px;
+  width: 33%;
+  &--image {
+    width: 66%;
+    background-image: url(../../img/features-image-1.jpg);
+  }
+  &--blue {
+    background-color: #81b3d2;
+    color: #ffffff;
+  }
+}
+.features__item-title {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+
+}
+.features__item-sub {
+  font-size: 14px;
+  line-height: 21px;
+}
+.features__item-text {
+  font-size: 14px;
+  line-height: 21px;
+}

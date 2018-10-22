@@ -8,3 +8,15 @@
 @import "blocks/footer.scss";
 @import "blocks/popup.scss";
 @import "blocks/page-wrapper.scss";
+@import "blocks/promo.scss";
+
+body {
+  background-color: #f2f2f2;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000;
+  
+}
