@@ -427,11 +427,13 @@ a {
 
 .features__list {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   margin: 0;
-  padding: 0;
-  list-style: none; }
+  padding: 0; }
+  .features__list--grey {
+    background: #eeeeee; }
+  .features__list--blue {
+    background-color: #81b3d2;
+    color: #ffffff; }
 
 .features__item {
   margin: 0;

@@ -3,13 +3,16 @@
 }
 .features__list {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
 
   margin: 0;
   padding: 0;
-
-  list-style: none;
+  &--grey {
+    background: #eeeeee;
+  }
+  &--blue {
+    background-color: #81b3d2;
+    color: #ffffff;
+  }
 }
 .features__item {
   margin: 0;
@@ -29,13 +32,6 @@
   &--image-2 {
     background: url(../../img/features-image-2.jpg) no-repeat center;
     background-size: cover;
-  }
-  &--blue {
-    background-color: #81b3d2;
-    color: #ffffff;
-  }
-  &--grey {
-    background-color: #eeeeee;
   }
   &--icon {
     height: 330px;
