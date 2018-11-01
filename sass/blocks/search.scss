@@ -1,16 +1,22 @@
 .search {
+  position: relative;
+
   height: 290px;
 }
+
 .search__title {
-  padding-top: 39px;
+  margin: 0;
+  padding-top: 46px;
 
   font-size: 30px;
   line-height: 36px;
   font-weight: bold;
 }
+
 .search__text {
+  margin: 0;
   padding-top: 30px;
-  
+
   font-size: 14px;
   line-height: 24px;
   color: #333333;

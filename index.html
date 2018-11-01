@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +9,16 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <div class="page-wrapper">
     <header class="header">
       <h1 class="visually-hidden">Навигация</h1>
       <nav class="main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#" class="main-nav__link">ИНФОРМАЦИЯ</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__link">ФОТО И ВИДЕО</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__link">КАРТА ШТАТА</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link main-nav__link--active">ИНФОРМАЦИЯ</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link main-nav__link--inactive">ФОТО И ВИДЕО</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link main-nav__link--inactive">КАРТА ШТАТА</a></li>
           <li class="main-nav__item"><a href="#" class="main-nav__link">ГОСТИНИЦЫ</a></li>
         </ul>
       </nav>
@@ -26,15 +28,15 @@
     </header>
     <main class="main">
       <section class="promo">
-          <h1 class="visually-hidden">Преимущества</h1>
-          <div class="promo__bg">
+        <h1 class="visually-hidden">Преимущества</h1>
+        <div class="promo__bg">
 
-          </div>
-          <div class="promo__title-container">
-            <h2 class="promo__title">СЕДОНА — небольшой городок в АРИЗОНЕ, 
-                зАСЛУЖИвающий большего!</h2>
-            <p class="promo__desc">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-          </div>
+        </div>
+        <div class="promo__title-container">
+          <h2 class="promo__title">СЕДОНА — небольшой городок в АРИЗОНЕ,
+            зАСЛУЖИвающий большего!</h2>
+          <p class="promo__desc">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
       </section>
       <section class="features">
         <div class="features__list features__list--blue">
@@ -59,19 +61,19 @@
             <p class="features__item-text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
           </div>
           <div class="features__item features__item--icon">
-              <span class="features__icon features__icon--gift"></span>
-              <p class="features__item-name">Сувениры</p>
-              <p class="features__item-text">Не только китайского, но и местного производства!</p>
+            <span class="features__icon features__icon--gift"></span>
+            <p class="features__item-name">Сувениры</p>
+            <p class="features__item-text">Не только китайского, но и местного производства!</p>
           </div>
         </div>
         <div class="features__list features__list--blue">
           <div class="features__item features__item--image features__item--image-2">
-            
+
           </div>
           <div class="features__item features__item--blue">
-            <p class="features__item-title">Настоящий городок</p>
-            <p class="features__item-sub">-№1-</p>
-            <p class="features__item-text">СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+            <p class="features__item-title">там есть мост дьявола</p>
+            <p class="features__item-sub">-№2-</p>
+            <p class="features__item-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </div>
         <div class="features__list features__list--grey">
@@ -94,56 +96,91 @@
       </section>
       <section class="search">
         <h2 class="search__title">Заинтересовались?</h2>
-        <p class="search__text">Укажите предполагаемые даты поездки, 
-        и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button class="btn btn--search">Поиск гостиницы в Седоне</button>
+        <p class="search__text">Укажите предполагаемые даты поездки, <br>
+          и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button class="btn btn--search btn--brown">Поиск гостиницы в Седоне</button>
+        <div class="popup">
+          <h1 class="visually-hidden">Поиск гостиницы</h1>
+          <form action="" class="popup__form">
+            <p class="popup__inner popup__inner--date">
+              <label for="arrival-date" class="popup__label">Дата заезда:</label>
+              <span class="popup__wrap popup__wrap--date">
+                <input type="text" class="popup__input popup__input--date" id="arrival-date" value="24 апреля 2017">
+                <button class="popup__btn popup__btn--date" type="button">календарь
+                  <svg xmlns="http://www.w3.org/2000/svg" class="popup__calendar" width="21" height="22" viewBox="0 0 21 22">
+                    <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
+                    <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
+                  </svg>
+                </button>
+              </span>
+            </p>
+            <p class="popup__inner popup__inner--date">
+              <label for="departure-date" class="popup__label">Дата выезда:</label>
+              <span class="popup__wrap popup__wrap--date">
+                <input type="text" class="popup__input popup__input--date" id="departure-date" value="4 июля 2017">
+                <button class="popup__btn popup__btn--date" type="button">календарь
+                  <svg xmlns="http://www.w3.org/2000/svg" class="popup__calendar" width="21" height="22" viewBox="0 0 21 22">
+                    <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
+                    <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
+                  </svg>
+                </button>
+              </span>
+            </p>
+            <p class="popup__inner popup__inner--adults">
+              <label for="amount-adults" class="popup__label">Взрослые:</label>
+              <span class="popup__wrap popup__wrap--adults">
+                <button class="popup__btn popup__btn--plus" type="button">плюс</button>
+                <input type="text" id="amount-adults" class="popup__input popup__input--people popup__input--adults"
+                  value="2">
+                <button class="popup__btn popup__btn--minus" type="button">минус</button>
+              </span>
+            </p>
+            <p class="popup__inner popup__inner--children">
+              <label for="amount-children" class="popup__label">Дети:</label>
+              <span class="popup__wrap popup__wrap--children">
+                <button class="popup__btn popup__btn--plus" type="button">плюс</button>
+                <input type="text" id="amount-children" class="popup__input popup__input--people popup__input--children"
+                  value="0">
+                <button class="popup__btn popup__btn--minus" type="button">минус</button>
+              </span>
+            </p>
+            <button class="btn btn--popup btn--blue" type="submit">Найти</button>
+          </form>
+        </div>
       </section>
       <div class="map">
         <h1 class="visually-hidden">Карта</h1>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d943224.5848267667!2d-112.55603504737172!3d34.64229879862261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1540409263638" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d943224.5848267667!2d-112.55603504737172!3d34.64229879862261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1540409263638"
+          width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
 
       </div>
     </main>
     <footer class="footer">
-      <a href="#" class="footer__hashtag">#visitsedona</a>
+      <div class="footer__hashtag-wrap">
+        <a href="#" class="footer__hashtag">#visitsedona</a>
+      </div>
       <div class="footer__socials">
         <a href="#" class="footer__socials-link btn">
           <span class="visually-hidden">вк</span>
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15"><path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15"
+            viewBox="0 0 17 15">
+            <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z" /></svg>
         </a>
         <a href="#" class="footer__socials-link btn">
           <span class="visually-hidden">фейсбук</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
+            <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" /></svg>
         </a>
         <a href="#" class="footer__socials-link btn">
           <span class="visually-hidden">ютуб</span>
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16"><path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16"
+            viewBox="0 0 20 16">
+            <path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z" /></svg>
         </a>
       </div>
-      <a href="#" class="footer_copyright">B</a>
+      <a href="#" class="footer_copyright">Копирайт</a>
     </footer>
-    <div class="popup visually-hidden">
-      <h1 class="visually-hidden">Поиск гостиницы</h1>
-      <form action="" class="popup__form">
-        <p class="popup__inner">
-          <label for="" class="popup__label">Дата заезда:</label>
-          <input type="date" class="popup__date">
-        </p>
-        <p class="popup__inner">
-          <label for="" class="popup__label">Дата выезда:</label>
-          <input type="date" class="popup__date">
-        </p>
-        <p class="popup__inner">
-          <label for="" class="popup__label">Взрослые:</label>
-          <input type="text" class="popup__date" value="2">
-        </p>
-        <p class="popup__inner">
-          <label for="" class="popup__label">Дети:</label>
-          <input type="text" class="popup__date" value="0">
-        </p>
-        <button class="btn popup__btn" type="submit">Найти</button>
-      </form>
-    </div>
   </div>
 </body>
+
 </html>

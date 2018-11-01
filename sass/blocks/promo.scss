@@ -3,19 +3,22 @@
 
 
 }
+
 .promo__bg {
   height: 508px;
-  background: 
-  url(../../img/triangle.png) no-repeat 52% bottom,
-  url(../../img/text.png) no-repeat center 45%,
-  url(../../img/background-photo.jpg) no-repeat top;
-  background-size: contain,auto,auto;
+  background:
+    url("../../img/triangle.png") no-repeat 52% bottom,
+    url("../../img/text.png") no-repeat center 45%,
+    url("../../img/background-photo.jpg") no-repeat top;
+  background-size: contain, auto, auto;
 }
+
 .promo__title-container {
   height: 212px;
   width: 550px;
   margin: 0 auto;
 }
+
 .promo__title {
   margin: 0;
   padding-top: 55px;
@@ -25,6 +28,7 @@
   font-weight: bold;
   color: #000000;
 }
+
 .promo__desc {
   margin: 0;
   padding-top: 35px;

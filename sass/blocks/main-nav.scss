@@ -1,24 +1,25 @@
 .main-nav__list {
   display: flex;
-
   padding: 0 6%;
   margin: 0;
-
   list-style: none;
   min-width: 768px;
 }
+
 .main-nav__item {
   width: 20%;
   text-align: left;
   padding-top: 15px;
   padding-bottom: 15px;
-  
+
   &:nth-child(2) {
     margin-right: 20%;
   }
+
   &:nth-child(-n+2) {
     text-align: left;
   }
+
   &:nth-last-child(-n+2) {
     text-align: right;
   }
@@ -29,4 +30,26 @@
   line-height: 26px;
   font-weight: bold;
   color: #000000;
+
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: #cacaca;
+  }
+
+  &--active {
+    color: #766357;
+  }
+
+  &--inactive {
+    color: #cacaca;
+    cursor: default;
+
+    &:hover,
+    &:active {
+      color: #cacaca;
+    }
+  }
 }
