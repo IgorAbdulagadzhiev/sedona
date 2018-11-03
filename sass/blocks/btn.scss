@@ -8,6 +8,24 @@
   color: #ffffff;
   text-transform: uppercase;
   border: none;
+  &--transparent {
+    margin: 0 auto;
+    padding: 6px 35px;
+
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
+    &:hover {
+      color: #000000;
+
+      background: #ffffff;
+    }
+  }
   &--search {
     margin: 0 auto;
     margin-top: 44px;

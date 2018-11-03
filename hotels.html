@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Гостиницы</title>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <header class="header">
+      <h2 class="visually-hidden">Навигация</h2>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="index.html" class="main-nav__link">ИНФОРМАЦИЯ</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link main-nav__link--inactive">ФОТО И ВИДЕО</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link main-nav__link--inactive">КАРТА ШТАТА</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link main-nav__link--active">ГОСТИНИЦЫ</a></li>
+        </ul>
+      </nav>
+      <div class="header__logo-wrap">
+        <img src="img/logo-sedona-desktop.svg" class="header__logo" alt="логотип Sedona" height="70" width="138">
+      </div>
+    </header>
+    <main>
+      <section class="filter">
+        <form action="get" class="filter__form">
+          <div class="filter__checkbox-wrap">
+          <fieldset class="filter__fieldset">
+            <legend class="filter__legend">Инфраструктура:</legend>
+            <div class="filter__list">
+              <label class="filter__checkbox-label" for=""><input class="visually-hidden" type="checkbox">бассейн</label>
+              <label class="filter__checkbox-label" for=""><input class="visually-hidden" type="checkbox">парковка</label>
+              <label class="filter__checkbox-label" for=""><input class="visually-hidden" type="checkbox">wi-fi</label>
+            </div>
+          </fieldset>
+          <fieldset class="filter__fieldset filter__fieldset--housing">
+            <legend class="filter__legend">Тип жилья:</legend>
+            <div class="filter__list">
+              <label class="filter__checkbox-label" for=""><input class="visually-hidden" type="checkbox">гостиница</label>
+              <label class="filter__checkbox-label" for=""><input class="visually-hidden" type="checkbox">мотель</label>
+              <label class="filter__checkbox-label" for=""><input class="visually-hidden" type="checkbox">апартаменты</label>
+            </div>
+          </fieldset>
+        </div>
+          <div class="filter__range-wrap">
+            <fieldset class="filter__fieldset">
+              <legend class="filter__legend filter__legend--range">Стоимость в сутки (р):</legend>
+              <div class="filter__price-controls">
+                <label class="filter__range-label filter__range-label--min" for="">от <input class="filter__range-input" name="min-price" type="text" value="0"></label>
+                <label class="filter__range-label filter__range-label--max" for="">до <input class="filter__range-input" name="max-price" type="text" value="3000"></label>
+              </div>
+              <div class="filter__range-controls">
+                <div class="filter__scale">
+                  <div class="filter__bar"></div>
+                </div>
+                <div class="filter__range-toggle filter__range-toggle--min"></div>
+                <div class="filter__range-toggle filter__range-toggle--max"></div>
+              </div>
+            </fieldset>
+            <button class="btn btn--transparent" type="submit">показать</button>
+          </div>
+        </form>
+
+      </section>
+      <section class="results">
+        <div class="results__sorting">
+          <div class="results__sort-left">
+            <p class="results__find">Найдено:3</p>
+            <p class="results__sort-title">сортировка:</p>
+            <div class="results__sort-list">
+              <p class="results__sort-item">По цене</p>
+              <p class="results__sort-item">По типу</p>
+              <p class="results__sort-item">По рейтингу</p>
+            </div>
+          </div>
+          <div class="results__sort-right">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="results__items">
+          <div class="results__card">
+            <div class="results__img-wrap">
+              <img src="" alt="Amara resort & spa">
+            </div>
+            <div class="results__card-wrap">
+              <h3 class="results__card-name">Amara resort & spa</h3>
+              <div>
+                <p>Гостиница</p>
+                <p>от 4000 р.</p>
+              </div>
+              <div class="results__btn-wrap">
+                <a href="#">подробнее</a><a href="#">забронировать</a>
+              </div>
+            </div>
+            <div class="results__rating">
+              <span class="results__star"></span>
+              <p class="results__rating-value">рейтинг: 8.5</p>
+            </div>
+          </div>
+          <div class="results__card">
+            <div class="results__img-wrap">
+              <img src="" alt="Desert quil inn">
+            </div>
+            <div class="results__card-wrap">
+              <h3 class="results__card-name">Desert qual inn</h3>
+              <div>
+                <p>Гостиница</p>
+                <p>от 4000 р.</p>
+              </div>
+              <div class="results__btn-wrap">
+                <a href="#">подробнее</a><a href="#">забронировать</a>
+              </div>
+            </div>
+            <div class="results__rating">
+              <span class="results__star"></span>
+              <p class="results__rating-value">рейтинг: 8.5</p>
+            </div>
+          </div>
+          <div class="results__card">
+            <div class="results__img-wrap">
+              <img src="" alt="Villas at poco diablo">
+            </div>
+            <div class="results__card-wrap">
+              <h3 class="results__card-name">Villas at poco diablo</h3>
+              <div>
+                <p>Гостиница</p>
+                <p>от 4000 р.</p>
+              </div>
+              <div class="results__btn-wrap">
+                <a href="#">подробнее</a><a href="#">забронировать</a>
+              </div>
+            </div>
+            <div class="results__rating">
+              <span class="results__star"></span>
+              <p class="results__rating-value">рейтинг: 8.5</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--
+    <footer class="footer">
+      <div class="footer__hashtag-wrap">
+        <a href="#" class="footer__hashtag">#visitsedona</a>
+      </div>
+      <div class="footer__socials">
+        <a href="#" class="footer__socials-link btn">
+          <span class="visually-hidden">вк</span>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15"
+            viewBox="0 0 17 15">
+            <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z" /></svg>
+        </a>
+        <a href="#" class="footer__socials-link btn">
+          <span class="visually-hidden">фейсбук</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
+            <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" /></svg>
+        </a>
+        <a href="#" class="footer__socials-link btn">
+          <span class="visually-hidden">ютуб</span>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16"
+            viewBox="0 0 20 16">
+            <path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z" /></svg>
+        </a>
+      </div>
+      <a href="#" class="footer_copyright">Копирайт</a>
+    </footer>
+    -->
+  </div>
+</body>
+
+</html>

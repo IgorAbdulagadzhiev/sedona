@@ -448,7 +448,7 @@ a {
 
 .features__item {
   margin: 0;
-  padding: 0 50px;
+  padding: 0 5%;
   height: 256px;
   width: 33.3%;
   color: #333333; }
@@ -456,10 +456,10 @@ a {
     width: 66.7%;
     background-size: contain; }
   .features__item--image-1 {
-    background: url(../../img/features-image-1.jpg) no-repeat center;
+    background: url("../../img/features-image-1.jpg") no-repeat center;
     background-size: cover; }
   .features__item--image-2 {
-    background: url(../../img/features-image-2.jpg) no-repeat center;
+    background: url("../../img/features-image-2.jpg") no-repeat center;
     background-size: cover; }
   .features__item--icon {
     height: 330px; }
@@ -499,11 +499,11 @@ a {
   height: 80px;
   width: 80px; }
   .features__icon--house {
-    background: url(../../img/icon-1.svg) no-repeat; }
+    background: url("../../img/icon-1.svg") no-repeat; }
   .features__icon--food {
-    background: url(../../img/icon-3.svg) no-repeat; }
+    background: url("../../img/icon-3.svg") no-repeat; }
   .features__icon--gift {
-    background: url(../../img/icon-2.svg) no-repeat; }
+    background: url("../../img/icon-2.svg") no-repeat; }
 
 .btn {
   display: block;
@@ -515,6 +515,19 @@ a {
   color: #ffffff;
   text-transform: uppercase;
   border: none; }
+  .btn--transparent {
+    margin: 0 auto;
+    padding: 6px 35px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    cursor: pointer; }
+    .btn--transparent:hover {
+      color: #000000;
+      background: #ffffff; }
   .btn--search {
     margin: 0 auto;
     margin-top: 44px;
@@ -716,8 +729,8 @@ a {
 
 .promo__bg {
   height: 508px;
-  background: url(../../img/triangle.png) no-repeat 52% bottom, url(../../img/text.png) no-repeat center 45%, url(../../img/background-photo.jpg) no-repeat top;
-  background-size: contain,auto,auto; }
+  background: url("../../img/triangle.png") no-repeat 52% bottom, url("../../img/text.png") no-repeat center 45%, url("../../img/background-photo.jpg") no-repeat top;
+  background-size: contain, auto, auto; }
 
 .promo__title-container {
   height: 212px;
@@ -761,6 +774,119 @@ a {
   height: 593px;
   background: url(../../img/map.jpg) no-repeat;
   z-index: 9; }
+
+.filter {
+  padding: 0 6%;
+  height: 217px;
+  background: url("../../img/filter-background.jpg") 0 -57px no-repeat;
+  background-size: cover;
+  color: #fff; }
+
+.filter__form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.filter__checkbox-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 400px; }
+
+.filter__checkbox-label {
+  margin-top: 25px;
+  padding-left: 40px;
+  font-size: 14px;
+  line-height: 21px; }
+
+.filter__range-wrap {
+  width: 330px;
+  padding-left: 10px; }
+
+.filter__fieldset {
+  margin: 0;
+  margin-top: 30px;
+  padding: 0;
+  border: none;
+  text-align: left; }
+  .filter__fieldset--housing {
+    margin-left: 26%; }
+
+.filter__legend {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px; }
+  .filter__legend--range {
+    margin-bottom: 9px; }
+
+.filter__list {
+  display: flex;
+  flex-direction: column; }
+
+.filter__price-controls {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px; }
+  .filter__price-controls::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 22px;
+    background: #ffffff;
+    transform: translate(-50%, -50%); }
+
+.filter__range-label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 30px;
+  vertical-align: top;
+  cursor: pointer; }
+  .filter__range-label--min, .filter__range-label--max {
+    width: 90px;
+    margin-left: 65px; }
+
+.filter__range-input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none; }
+
+.filter__range-controls {
+  position: relative;
+  margin-bottom: 32px; }
+
+.filter__scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3); }
+
+.filter__bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff; }
+
+.filter__range-toggle {
+  box-sizing: content-box;
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer; }
+  .filter__range-toggle--min {
+    left: 0; }
+  .filter__range-toggle--max {
+    left: 80%; }
+  .filter__range-toggle:hover {
+    background: #1c4f80; }
 
 body {
   background-color: #f2f2f2;

@@ -1,0 +1,152 @@
+.filter {
+  padding: 0 6%;
+  height: 217px;
+  background: url('../../img/filter-background.jpg') 0 -57px no-repeat;
+  background-size: cover;
+
+  color: #fff;
+}
+
+.filter__form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.filter__checkbox-wrap {
+  display: flex;
+  flex-direction: row;
+
+  width: 400px;
+}
+
+.filter__checkbox-label {
+  margin-top: 25px;
+  padding-left: 40px;
+
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.filter__range-wrap {
+  width: 330px;
+  padding-left: 10px;
+}
+
+.filter__fieldset {
+  margin: 0;
+  margin-top: 30px;
+  padding: 0;
+  border: none;
+  text-align: left;
+
+  &--housing {
+    margin-left: 26%;
+  }
+}
+
+.filter__legend {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+
+  &--range {
+    margin-bottom: 9px;
+  }
+}
+
+.filter__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter__price-controls {
+  position: relative;
+
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  &::after {
+    content: "";
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: 2px;
+    height: 22px;
+
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.filter__range-label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 30px;
+  vertical-align: top;
+
+  cursor: pointer;
+
+  &--min,
+  &--max {
+    width: 90px;
+    margin-left: 65px;
+  }
+}
+
+.filter__range-input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+.filter__range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+.filter__scale {
+  height: 2px;
+
+  background: rgba(255,255,255,0.3);
+}
+.filter__bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+.filter__range-toggle {
+  box-sizing: content-box;
+
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer; 
+  &--min {
+    left: 0;
+  }
+  &--max {
+    left: 80%;
+  }
+  &:hover {
+    background: #1c4f80;
+  }
+}
