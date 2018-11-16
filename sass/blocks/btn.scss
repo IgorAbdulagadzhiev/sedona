@@ -8,6 +8,7 @@
   color: #ffffff;
   text-transform: uppercase;
   border: none;
+  background-color: #81b3d2;
   &--transparent {
     margin: 0 auto;
     padding: 6px 35px;
@@ -36,6 +37,11 @@
     width: 458px;
     height: 58px;
     margin-top: 24px;
+  }
+  &--card {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 5px 17px;
   }
   &--brown {
     background-color: #766357;

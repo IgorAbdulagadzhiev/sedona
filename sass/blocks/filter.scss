@@ -21,15 +21,32 @@
 }
 
 .filter__checkbox-label {
+  position: relative;
   margin-top: 25px;
   padding-left: 40px;
 
   font-size: 14px;
   line-height: 21px;
+
+  cursor: pointer;
+}
+
+.filter__checkbox-indicator {
+  position: absolute;
+  display: block;
+
+  top: 0;
+  left: 0;
+  width: 26px;
+  height: 23px;
+  background: url('../../img/checkbox-off.svg') no-repeat;
+}
+.filter__checkbox-label input[type=checkbox]:checked + .filter__checkbox-indicator {
+  background: url('../../img/checkbox-on.svg');
 }
 
 .filter__range-wrap {
-  width: 330px;
+  width: 34%;
   padding-left: 10px;
 }
 
@@ -70,6 +87,7 @@
 
   border: 2px solid #ffffff;
   border-radius: 2px;
+
   &::after {
     content: "";
     position: absolute;
@@ -95,13 +113,13 @@
 
   &--min,
   &--max {
-    width: 90px;
-    margin-left: 65px;
+    width: 30%;
+    margin-left: 18%;
   }
 }
 
 .filter__range-input {
-  width: 50px;
+  width: 60%;
   margin: 0;
 
   color: inherit;
@@ -110,22 +128,26 @@
   background: none;
   border: none;
 }
+
 .filter__range-controls {
   position: relative;
 
   margin-bottom: 32px;
 }
+
 .filter__scale {
   height: 2px;
 
-  background: rgba(255,255,255,0.3);
+  background: rgba(255, 255, 255, 0.3);
 }
+
 .filter__bar {
   width: 80%;
   height: 2px;
 
   background: #ffffff;
 }
+
 .filter__range-toggle {
   box-sizing: content-box;
 
@@ -139,13 +161,16 @@
   border: 8px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-  cursor: pointer; 
+  cursor: pointer;
+
   &--min {
     left: 0;
   }
+
   &--max {
     left: 80%;
   }
+
   &:hover {
     background: #1c4f80;
   }

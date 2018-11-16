@@ -30,29 +30,43 @@
       <section class="filter">
         <form action="get" class="filter__form">
           <div class="filter__checkbox-wrap">
-          <fieldset class="filter__fieldset">
-            <legend class="filter__legend">Инфраструктура:</legend>
-            <div class="filter__list">
-              <label class="filter__checkbox-label" for=""><input class="visually-hidden" type="checkbox">бассейн</label>
-              <label class="filter__checkbox-label" for=""><input class="visually-hidden" type="checkbox">парковка</label>
-              <label class="filter__checkbox-label" for=""><input class="visually-hidden" type="checkbox">wi-fi</label>
-            </div>
-          </fieldset>
-          <fieldset class="filter__fieldset filter__fieldset--housing">
-            <legend class="filter__legend">Тип жилья:</legend>
-            <div class="filter__list">
-              <label class="filter__checkbox-label" for=""><input class="visually-hidden" type="checkbox">гостиница</label>
-              <label class="filter__checkbox-label" for=""><input class="visually-hidden" type="checkbox">мотель</label>
-              <label class="filter__checkbox-label" for=""><input class="visually-hidden" type="checkbox">апартаменты</label>
-            </div>
-          </fieldset>
-        </div>
+            <fieldset class="filter__fieldset">
+              <legend class="filter__legend">Инфраструктура:</legend>
+              <div class="filter__list">
+                <label class="filter__checkbox-label" for="checkbox-pool">
+                  <input id="checkbox-pool" class="visually-hidden" type="checkbox" checked>бассейн <span class="filter__checkbox-indicator"></span>
+                </label>
+                <label class="filter__checkbox-label" for="checkbox-parking">
+                  <input id="checkbox-parking" class="visually-hidden" type="checkbox">парковка <span class="filter__checkbox-indicator"></span>
+                </label>
+                <label class="filter__checkbox-label" for="checkbox-wifi">
+                  <input id="checkbox-wifi" class="visually-hidden" type="checkbox">wi-fi <span class="filter__checkbox-indicator"></span>
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="filter__fieldset filter__fieldset--housing">
+              <legend class="filter__legend">Тип жилья:</legend>
+              <div class="filter__list">
+                <label class="filter__checkbox-label" for="checkbox-hotel">
+                  <input id="checkbox-hotel" class="visually-hidden" type="checkbox" checked>гостиница <span class="filter__checkbox-indicator"></span>
+                </label>
+                <label class="filter__checkbox-label" for="checkbox-motel">
+                  <input id="checkbox-motel" class="visually-hidden" type="checkbox">мотель <span class="filter__checkbox-indicator"></span>
+                </label>
+                <label class="filter__checkbox-label" for="checkbox-apartments">
+                  <input id="checkbox-apartments" class="visually-hidden" type="checkbox">апартаменты <span class="filter__checkbox-indicator"></span>
+                </label>
+              </div>
+            </fieldset>
+          </div>
           <div class="filter__range-wrap">
             <fieldset class="filter__fieldset">
               <legend class="filter__legend filter__legend--range">Стоимость в сутки (р):</legend>
               <div class="filter__price-controls">
-                <label class="filter__range-label filter__range-label--min" for="">от <input class="filter__range-input" name="min-price" type="text" value="0"></label>
-                <label class="filter__range-label filter__range-label--max" for="">до <input class="filter__range-input" name="max-price" type="text" value="3000"></label>
+                <label class="filter__range-label filter__range-label--min" for="">от <input class="filter__range-input"
+                    name="min-price" type="text" value="0"></label>
+                <label class="filter__range-label filter__range-label--max" for="">до <input class="filter__range-input"
+                    name="max-price" type="text" value="3000"></label>
               </div>
               <div class="filter__range-controls">
                 <div class="filter__scale">
@@ -73,71 +87,82 @@
             <p class="results__find">Найдено:3</p>
             <p class="results__sort-title">сортировка:</p>
             <div class="results__sort-list">
-              <p class="results__sort-item">По цене</p>
-              <p class="results__sort-item">По типу</p>
-              <p class="results__sort-item">По рейтингу</p>
+              <a href="#" class="results__sort-item">По цене</a>
+              <a href="#" class="results__sort-item">По типу</a>
+              <a href="#" class="results__sort-item">По рейтингу</a>
             </div>
           </div>
           <div class="results__sort-right">
-            <span></span>
-            <span></span>
+            <a href="#" class="results__icon-up"> <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10"
+                viewBox="0 0 11 10">
+                <path fill="#cacaca" d="M5.5 0L0 10h11z" /></svg> </a>
+            <a href="#" class="results__icon-down"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10"
+                viewBox="0 0 11 10">
+                <path fill="#cacaca" d="M5.5 10L0 0h11" /></svg></a>
           </div>
         </div>
         <div class="results__items">
           <div class="results__card">
+              <div class="results__card-content">
             <div class="results__img-wrap">
-              <img src="" alt="Amara resort & spa">
+              <img src='img/results-img1.jpg' alt="Amara resort & spa" width="135" height="90">
             </div>
-            <div class="results__card-wrap">
-              <h3 class="results__card-name">Amara resort & spa</h3>
-              <div>
-                <p>Гостиница</p>
-                <p>от 4000 р.</p>
-              </div>
-              <div class="results__btn-wrap">
-                <a href="#">подробнее</a><a href="#">забронировать</a>
+
+              <div class="results__card-wrap">
+                <h3 class="results__card-name">Amara resort & spa</h3>
+                <div class="results__text-wrap">
+                  <p class="results__card-type">Гостиница</p>
+                  <p class="results__card-price">от 4000 р.</p>
+                </div>
+                <div class="results__btn-wrap">
+                  <a href="#" class="btn btn--card btn--blue">подробнее</a><a href="#" class="btn btn--card btn--brown">забронировать</a>
+                </div>
               </div>
             </div>
             <div class="results__rating">
-              <span class="results__star"></span>
+              <span class="results__star results__star--4"></span>
               <p class="results__rating-value">рейтинг: 8.5</p>
             </div>
           </div>
           <div class="results__card">
-            <div class="results__img-wrap">
-              <img src="" alt="Desert quil inn">
-            </div>
-            <div class="results__card-wrap">
-              <h3 class="results__card-name">Desert qual inn</h3>
-              <div>
-                <p>Гостиница</p>
-                <p>от 4000 р.</p>
+            <div class="results__card-content">
+              <div class="results__img-wrap">
+                <img src='img/results-img2.jpg' alt="Desert quil inn" width="135" height="90">
               </div>
-              <div class="results__btn-wrap">
-                <a href="#">подробнее</a><a href="#">забронировать</a>
+              <div class="results__card-wrap">
+                <h3 class="results__card-name">Desert qual inn</h3>
+                <div class="results__text-wrap">
+                  <p class="results__card-type">Гостиница</p>
+                  <p class="results__card-price">от 4000 р.</p>
+                </div>
+                <div class="results__btn-wrap">
+                  <a href="#" class="btn btn--card btn--blue">подробнее</a><a href="#" class="btn btn--card btn--brown">забронировать</a>
+                </div>
               </div>
             </div>
             <div class="results__rating">
-              <span class="results__star"></span>
+              <span class="results__star results__star--3"></span>
               <p class="results__rating-value">рейтинг: 8.5</p>
             </div>
           </div>
           <div class="results__card">
-            <div class="results__img-wrap">
-              <img src="" alt="Villas at poco diablo">
-            </div>
-            <div class="results__card-wrap">
-              <h3 class="results__card-name">Villas at poco diablo</h3>
-              <div>
-                <p>Гостиница</p>
-                <p>от 4000 р.</p>
+            <div class="results__card-content">
+              <div class="results__img-wrap">
+                <img src='img/results-img3.jpg' alt="Villas at poco diablo" width="135" height="90">
               </div>
-              <div class="results__btn-wrap">
-                <a href="#">подробнее</a><a href="#">забронировать</a>
+              <div class="results__card-wrap">
+                <h3 class="results__card-name">Villas at poco diablo</h3>
+                <div class="results__text-wrap">
+                  <p class="results__card-type">Гостиница</p>
+                  <p class="results__card-price">от 4000 р.</p>
+                </div>
+                <div class="results__btn-wrap">
+                  <a href="#" class="btn btn--card btn--blue">подробнее</a><a href="#" class="btn btn--card btn--brown">забронировать</a>
+                </div>
               </div>
             </div>
             <div class="results__rating">
-              <span class="results__star"></span>
+              <span class="results__star results__star--2"></span>
               <p class="results__rating-value">рейтинг: 8.5</p>
             </div>
           </div>

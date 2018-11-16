@@ -1,0 +1,158 @@
+.results {
+  padding: 0 6%;
+}
+
+.results__sorting {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 30px 0;
+  min-height: 87px;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.results__sort-left {
+  display: flex;
+  flex-direction: row;
+
+  width: 528px;
+}
+
+.results__find {
+  margin: 0;
+  margin-right: 50px;
+
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.results__sort-title {
+  margin: 0;
+  margin-right: 40px;
+  margin-top: 4px;
+
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.results__sort-list {
+  display: flex;
+  flex-direction: row;
+
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.results__sort-item {
+  margin: 0;
+  margin-right: 26px;
+  margin-top: 4px;
+
+  text-decoration: none;
+  color: #000000;
+}
+.results__sort-right {
+  width: 34px;
+}
+.results__icon-up {
+  width: 11px;
+  height: 11px;
+}
+.results__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 151px;
+
+  border-bottom: 1px solid #cacaca;
+
+  text-align: left;
+}
+.results__card-content {
+  display: flex;
+  flex-direction: row;
+}
+.results__img-wrap {
+  width: 135px;
+  height: 90px;
+  margin-right: 30px;
+  margin-top: 5px;
+}
+.results__card-wrap {
+  width: 258px;
+}
+
+.results__text-wrap {
+  display: flex;
+  flex-direction: row;
+
+  padding-top: 9px;
+
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
+.results__card-name {
+  margin: 0;
+
+  font-size: 21px;
+  line-height: 26px;
+
+}
+.results__card-type {
+  margin: 0;
+  width: 44%;
+}
+.results__card-price {
+  margin: 0;
+  width: 54%;
+}
+.results__btn-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding-top: 8px;
+}
+.results__rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  min-height: 95px;
+}
+.results__star {
+  display: block;
+  margin-top: 5px;
+  height: 17px;
+  width: 90px;
+  background: url('../../img/star.svg');
+  &--2 {
+    width: 36px;
+  }
+  &--3 {
+    width: 54px;
+  }
+  &--4 {
+    width: 72px;
+  }
+}
+.results__rating-value {
+  display: block;
+  margin: 0;
+  padding-left: 17px;
+  padding-right: 13px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  background-color: #f2f2f2;
+
+  font-size: 14px;
+  line-height: 21px;
+  color: #666666;
+}

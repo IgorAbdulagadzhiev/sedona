@@ -514,7 +514,8 @@ a {
   font-weight: bold;
   color: #ffffff;
   text-transform: uppercase;
-  border: none; }
+  border: none;
+  background-color: #81b3d2; }
   .btn--transparent {
     margin: 0 auto;
     padding: 6px 35px;
@@ -537,6 +538,10 @@ a {
     width: 458px;
     height: 58px;
     margin-top: 24px; }
+  .btn--card {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 5px 17px; }
   .btn--brown {
     background-color: #766357; }
     .btn--brown:hover {
@@ -793,13 +798,27 @@ a {
   width: 400px; }
 
 .filter__checkbox-label {
+  position: relative;
   margin-top: 25px;
   padding-left: 40px;
   font-size: 14px;
-  line-height: 21px; }
+  line-height: 21px;
+  cursor: pointer; }
+
+.filter__checkbox-indicator {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 26px;
+  height: 23px;
+  background: url("../../img/checkbox-off.svg") no-repeat; }
+
+.filter__checkbox-label input[type=checkbox]:checked + .filter__checkbox-indicator {
+  background: url("../../img/checkbox-on.svg"); }
 
 .filter__range-wrap {
-  width: 330px;
+  width: 34%;
   padding-left: 10px; }
 
 .filter__fieldset {
@@ -846,11 +865,11 @@ a {
   vertical-align: top;
   cursor: pointer; }
   .filter__range-label--min, .filter__range-label--max {
-    width: 90px;
-    margin-left: 65px; }
+    width: 30%;
+    margin-left: 18%; }
 
 .filter__range-input {
-  width: 50px;
+  width: 60%;
   margin: 0;
   color: inherit;
   font: inherit;
@@ -887,6 +906,137 @@ a {
     left: 80%; }
   .filter__range-toggle:hover {
     background: #1c4f80; }
+
+.results {
+  padding: 0 6%; }
+
+.results__sorting {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 0;
+  min-height: 87px;
+  border-bottom: 1px solid #e5e5e5; }
+
+.results__sort-left {
+  display: flex;
+  flex-direction: row;
+  width: 528px; }
+
+.results__find {
+  margin: 0;
+  margin-right: 50px;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px; }
+
+.results__sort-title {
+  margin: 0;
+  margin-right: 40px;
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 18px; }
+
+.results__sort-list {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  line-height: 18px; }
+
+.results__sort-item {
+  margin: 0;
+  margin-right: 26px;
+  margin-top: 4px;
+  text-decoration: none;
+  color: #000000; }
+
+.results__sort-right {
+  width: 34px; }
+
+.results__icon-up {
+  width: 11px;
+  height: 11px; }
+
+.results__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 151px;
+  border-bottom: 1px solid #cacaca;
+  text-align: left; }
+
+.results__card-content {
+  display: flex;
+  flex-direction: row; }
+
+.results__img-wrap {
+  width: 135px;
+  height: 90px;
+  margin-right: 30px;
+  margin-top: 5px; }
+
+.results__card-wrap {
+  width: 258px; }
+
+.results__text-wrap {
+  display: flex;
+  flex-direction: row;
+  padding-top: 9px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333; }
+
+.results__card-name {
+  margin: 0;
+  font-size: 21px;
+  line-height: 26px; }
+
+.results__card-type {
+  margin: 0;
+  width: 44%; }
+
+.results__card-price {
+  margin: 0;
+  width: 54%; }
+
+.results__btn-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 8px; }
+
+.results__rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 95px; }
+
+.results__star {
+  display: block;
+  margin-top: 5px;
+  height: 17px;
+  width: 90px;
+  background: url("../../img/star.svg"); }
+  .results__star--2 {
+    width: 36px; }
+  .results__star--3 {
+    width: 54px; }
+  .results__star--4 {
+    width: 72px; }
+
+.results__rating-value {
+  display: block;
+  margin: 0;
+  padding-left: 17px;
+  padding-right: 13px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #f2f2f2;
+  font-size: 14px;
+  line-height: 21px;
+  color: #666666; }
 
 body {
   background-color: #f2f2f2;
