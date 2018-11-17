@@ -1,4 +1,5 @@
 .popup {
+  display: none;
   width: 568px;
   min-height: 395px;
   padding: 55px 55px;
@@ -6,6 +7,9 @@
   background-color: #ffffff;
   box-shadow: 0 0 30px -4px rgba(0, 0, 0, .4);
   z-index: 10;
+  &--show {
+    display: block;
+  }
 }
 
 .popup__form {

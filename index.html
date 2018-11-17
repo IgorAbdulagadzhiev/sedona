@@ -28,17 +28,18 @@
     </header>
     <main class="main">
       <section class="promo">
-        <h2 class="visually-hidden">Преимущества</h2>
+        <h2 class="visually-hidden">Промо</h2>
         <div class="promo__bg">
 
         </div>
         <div class="promo__title-container">
-          <h2 class="promo__title">СЕДОНА — небольшой городок в АРИЗОНЕ,
-            зАСЛУЖИвающий большего!</h2>
+          <h3 class="promo__title">СЕДОНА — небольшой городок в АРИЗОНЕ,
+            зАСЛУЖИвающий большего!</h3>
           <p class="promo__desc">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
       </section>
       <section class="features">
+        <h2 class="visually-hidden">Преимущества</h2>
         <div class="features__list features__list--blue">
           <div class="features__item features__item--blue">
             <p class="features__item-title">Настоящий городок</p>
@@ -98,7 +99,7 @@
         <h2 class="search__title">Заинтересовались?</h2>
         <p class="search__text">Укажите предполагаемые даты поездки, <br>
           и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button class="btn btn--search btn--brown">Поиск гостиницы в Седоне</button>
+        <button class="btn btn--search btn--brown" id="popup-open">Поиск гостиницы в Седоне</button>
         <div class="popup">
           <h2 class="visually-hidden">Поиск гостиницы</h2>
           <form action="" class="popup__form">
@@ -155,7 +156,8 @@
 
       </div>
     </main>
-    <footer class="footer">
+    <footer class="footer footer--main">
+      <h2 class="visually-hidden">Подвал</h2>
       <div class="footer__hashtag-wrap">
         <a href="#" class="footer__hashtag">#visitsedona</a>
       </div>
@@ -181,6 +183,15 @@
       <a href="#" class="footer_copyright">Копирайт</a>
     </footer>
   </div>
+  <script>
+      var link = document.querySelector("#popup-open");
+      var popup = document.querySelector(".popup");
+    
+      link.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        popup.classList.toggle("popup--show");
+      });
+      </script>
 </body>
 
 </html>
