@@ -1,5 +1,5 @@
 {
-  "name": "mishka-all",
+  "name": "sedona",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,9 +9,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^9.3.1",
     "browser-sync": "^2.24.4",
     "gulp": "^3.9.1",
     "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {
+    "postcss": "^7.0.6"
   }
 }

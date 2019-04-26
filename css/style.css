@@ -119,8 +119,8 @@ h1 {
  * Address styling not present in IE 8/9.
  */
 mark {
-  background: #ff0;
-  color: #000; }
+  background: #ffff00;
+  color: #000000; }
 
 /**
  * Address inconsistent and variable font size in all browsers.
@@ -133,9 +133,9 @@ small {
  */
 sub,
 sup {
+  position: relative;
   font-size: 75%;
   line-height: 0;
-  position: relative;
   vertical-align: baseline; }
 
 sup {
@@ -392,8 +392,8 @@ a {
 .header__logo {
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
+  left: 0;
   margin: 0 auto;
   z-index: 10; }
 
@@ -571,8 +571,8 @@ a {
     left: 0; }
 
 .footer__hashtag-wrap {
-  width: 33.334%;
   display: flex;
+  width: 33.334%;
   align-items: center;
   justify-content: center; }
 
@@ -588,7 +588,6 @@ a {
     color: #cacaca; }
 
 .footer__socials {
-  width: 33.334%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -627,9 +626,9 @@ a {
   flex-wrap: wrap; }
 
 .popup__inner {
+  display: flex;
   margin: 0;
   margin-bottom: 30px;
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline; }
@@ -641,11 +640,11 @@ a {
   font-weight: bold; }
 
 .popup__wrap {
-  position: relative;
-  display: block; }
+  display: block;
+  position: relative; }
   .popup__wrap--date {
-    position: relative;
     display: block;
+    position: relative;
     width: 346px; }
   .popup__wrap--adults {
     width: 114px;
@@ -670,8 +669,8 @@ a {
     text-align: center; }
 
 .popup__btn {
-  position: absolute;
   display: block;
+  position: absolute;
   font-size: 0;
   border: none;
   background-color: #f2f2f2; }
@@ -680,36 +679,36 @@ a {
   .popup__btn:active::before, .popup__btn:active::after {
     background-color: #81b3d2; }
   .popup__btn--date {
-    right: 8px;
     top: 9px;
+    right: 8px;
     width: 21px;
     height: 22px;
     padding: 0; }
   .popup__btn--plus {
-    left: 10px;
     top: 9px;
+    left: 10px;
     height: 20px;
     width: 20px; }
     .popup__btn--plus::after {
-      content: "";
       position: absolute;
-      left: 4px;
       top: 9px;
+      left: 4px;
+      content: "";
       width: 12px;
       height: 4px;
       background-color: #a9a9a9; }
   .popup__btn--minus {
-    right: 10px;
     top: 9px;
+    right: 10px;
     height: 20px;
     width: 20px; }
     .popup__btn--minus::after, .popup__btn--minus::before {
-      content: "";
       position: absolute;
+      content: "";
       background-color: #a9a9a9; }
     .popup__btn--minus::after {
-      left: 4px;
       top: 8px;
+      left: 4px;
       width: 12px;
       height: 4px; }
     .popup__btn--minus::before {
@@ -815,8 +814,8 @@ a {
   cursor: pointer; }
 
 .filter__checkbox-indicator {
-  position: absolute;
   display: block;
+  position: absolute;
   top: 0;
   left: 0;
   width: 26px;
@@ -858,14 +857,15 @@ a {
   border: 2px solid #ffffff;
   border-radius: 2px; }
   .filter__price-controls::after {
-    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
+    content: "";
     width: 2px;
     height: 22px;
     background: #ffffff;
-    transform: translate(-50%, -50%); }
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
 
 .filter__range-label {
   display: inline-block;
@@ -899,9 +899,9 @@ a {
   background: #ffffff; }
 
 .filter__range-toggle {
-  box-sizing: content-box;
   position: absolute;
   top: -9px;
+  box-sizing: content-box;
   width: 4px;
   height: 4px;
   background: #ababab;
@@ -1075,9 +1075,9 @@ a {
 
 body {
   background-color: #f2f2f2;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
-  color: #000; }
+  color: #000000; }

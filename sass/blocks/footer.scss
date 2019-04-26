@@ -7,6 +7,7 @@
   width: 100%;
   padding: 36px 0;
   background-color: rgba(255, 255, 255, 0.9);
+
   &--main {
     position: absolute;
     bottom: 0;
@@ -27,16 +28,17 @@
   line-height: 26px;
   text-decoration: none;
   font-weight: bold;
+
   &:hover {
     color: #81b3d2;
   }
+
   &:active {
     color: #cacaca;
   }
 }
 
 .footer__socials {
-  width: 33.334%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -49,9 +51,11 @@
   align-items: center;
   width: 46px;
   background-color: #81b3d2;
+
   &:hover {
     background-color: #669ec0;
   }
+
   &:active {
     background-color: #5496bd;
   }

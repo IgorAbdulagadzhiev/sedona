@@ -1,21 +1,28 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
+
 html {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   padding: 0;
   background-color: #f2f2f2;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
-a { 
+
+a {
   text-decoration: none;
 }
+
 .visually-hidden {
   position: absolute;
 
