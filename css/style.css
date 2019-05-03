@@ -456,10 +456,10 @@ a {
     width: 66.7%;
     background-size: contain; }
   .features__item--image-1 {
-    background: url("../../img/features-image-1.jpg") no-repeat center;
+    background: url("../img/features-image-1.jpg") no-repeat center;
     background-size: cover; }
   .features__item--image-2 {
-    background: url("../../img/features-image-2.jpg") no-repeat center;
+    background: url("../img/features-image-2.jpg") no-repeat center;
     background-size: cover; }
   .features__item--icon {
     height: 330px; }
@@ -499,11 +499,11 @@ a {
   height: 80px;
   width: 80px; }
   .features__icon--house {
-    background: url("../../img/icon-1.svg") no-repeat; }
+    background: url("../img/icon-1.svg") no-repeat; }
   .features__icon--food {
-    background: url("../../img/icon-3.svg") no-repeat; }
+    background: url("../img/icon-3.svg") no-repeat; }
   .features__icon--gift {
-    background: url("../../img/icon-2.svg") no-repeat; }
+    background: url("../img/icon-2.svg") no-repeat; }
 
 .btn {
   display: block;
@@ -736,12 +736,12 @@ a {
   box-shadow: 0 0 30px -4px rgba(0, 0, 0, 0.6); }
 
 .promo {
-  height: 724px; }
+  min-height: 700px; }
 
 .promo__bg {
   height: 508px;
   background-color: #9eb1c1;
-  background: url("../../img/triangle.png") no-repeat 52% bottom, url("../../img/text.png") no-repeat center 45%, url("../../img/background-photo.jpg") no-repeat top;
+  background: url("../img/triangle.png") no-repeat 52% bottom, url("../img/text.png") no-repeat center 45%, url("../img/background-photo.jpg") no-repeat top;
   background-size: contain, auto, auto; }
 
 .promo__title-container {
@@ -784,14 +784,14 @@ a {
 
 .map {
   height: 593px;
-  background: url(../../img/map.jpg) no-repeat;
+  background: url("../img/map.jpg") no-repeat;
   z-index: 9; }
 
 .filter {
   padding: 0 6%;
   height: 217px;
   background-color: #4b575e;
-  background: url("../../img/filter-background.jpg") 0 -57px no-repeat;
+  background: url("../img/filter-background.jpg") 0 -57px no-repeat;
   background-size: cover;
   color: #fff; }
 
@@ -820,10 +820,10 @@ a {
   left: 0;
   width: 26px;
   height: 23px;
-  background: url("../../img/checkbox-off.svg") no-repeat; }
+  background: url("../img/checkbox-off.svg") no-repeat; }
 
 .filter__checkbox-label input[type=checkbox]:checked + .filter__checkbox-indicator {
-  background: url("../../img/checkbox-on.svg"); }
+  background: url("../img/checkbox-on.svg"); }
 
 .filter__range-wrap {
   width: 34%;
@@ -1038,7 +1038,7 @@ a {
   margin-top: 5px;
   height: 17px;
   width: 90px;
-  background: url("../../img/star.svg"); }
+  background: url("../img/star.svg"); }
   .results__star--2 {
     width: 36px; }
   .results__star--3 {

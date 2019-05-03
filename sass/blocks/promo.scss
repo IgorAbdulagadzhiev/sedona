@@ -1,16 +1,14 @@
 .promo {
-  height: 724px;
-
-
+  min-height: 700px;
 }
 
 .promo__bg {
   height: 508px;
   background-color: #9eb1c1;
   background:
-    url("../../img/triangle.png") no-repeat 52% bottom,
-    url("../../img/text.png") no-repeat center 45%,
-    url("../../img/background-photo.jpg") no-repeat top;
+    url("../img/triangle.png") no-repeat 52% bottom,
+    url("../img/text.png") no-repeat center 45%,
+    url("../img/background-photo.jpg") no-repeat top;
   background-size: contain, auto, auto;
 }
 
